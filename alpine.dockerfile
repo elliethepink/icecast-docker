@@ -56,5 +56,4 @@ RUN mkdir -p /var/log/icecast && \
 
 EXPOSE 8000
 ENTRYPOINT ["docker-entrypoint"]
-USER $USER
 CMD ["icecast", "-c", "/etc/icecast.xml"]
